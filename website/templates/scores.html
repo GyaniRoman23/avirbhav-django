@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="scores-container">
+  <table class="scores-table">
+    <caption>Event</caption>
+    <thead>
+    {% for column in headings %}
+    <tr>
+      <th>{{ column }}</th>
+    </tr>
+    {% endfor %}
+    </thead>
+    {% for row in rows %}
+    <tr>
+      {% for item in row %}
+      <td>{{ item }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVIRBHAV</title>
+    <link rel="stylesheet" href="/static/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <!-- TOP section -->
+    <section id="banner">
+        <!-- navbar -->
+      <div id="container">
+        <div id="logoContainer">
+          <a href="" class="logo">
+            <img src="/static/assets/logo.png" alt="logo" />
+          </a>
+          <h2 class="brandName">Avirbhav</h2>
+        </div>
+        <nav>
+          <ul>
+            <li class="menu-item"><a href="#">HOME</a></li>
+            <li class="menu-item"><a href="#">JKIAPT</a></li>
+            <li class="menu-item"><a href="#">ABOUT</a></li>
+            <li class="menu-item"><a href="#">TEAMS</a></li>
+            <li class="menu-item"><a href="#">EVENTS</a></li>
+            <li class="menu-item"><a href="/scores">SCORE </a></li>
+            <button id="feed">FEEDBACK <i class="fa-solid fa-arrow-right"></i></button>
+          </ul>
+        </nav>
+      </div>
+      <!-- navbar end -->
+
+    {% block content %}{% endblock content %}
+
+  </body>
+</html>
